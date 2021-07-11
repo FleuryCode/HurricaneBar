@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hurricane Bar | Villers sur Mer</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="vendors/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="vendors/css/grid.css" type="text/css">
+    <link rel="stylesheet" href="vendors/css/queries.css" type="text/css">
+    <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Fonts: Roboto, san-serif | Lora, serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header id="home">
+
+        <nav id="main__nav">
+            <div class="header__row">
+                <ul class="header__nav js--header--nav">
+                    <li><a href="#reserver">Commander en Ligne</a></li>
+                    <li><a href="#carte">La Carte</a></li>
+                    <li><a href="#home"><h1>Hurricane Bar</h1></a></li>
+                    <li><a href="#boissons">Les Boissons</a></li>
+                    <li><a href="#reserver">Contact</a></li>
+                </ul>
+                <h1 class="header__mobile__title">Hurricane Bar</h1>
+                <a class="mobile__nav__icon js--nav--icon"><ion-icon name="menu-outline"></ion-icon></a>
+                <ul class="mobile__nav--list js--main-nav">
+                    <li><a href="#reserver">Commander en Ligne</a></li>
+                    <li><a href="#carte">La Carte</a></li>
+                    <li><a href="#boissons">Les Boissons</a></li>
+                    <li><a href="#reserver">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+            
+        
+        <div class="slideshow">
+            <div class="slideshow__item">
+                <img src="resources/img/temp_seul.jpg" alt="fruit">
+                <div class="item--text">
+                    <h5>Plats</h5>
+                </div>
+            </div>
+            <div class="slideshow__item">
+                <img src="resources/img/temp_beer.jpg" alt="croissant">
+                <div class="item--text">
+                    <h5>Vins &amp; Bierres</h5>
+                </div>
+            </div>
+            <div class="slideshow__item">
+                <img src="resources/img/temp_cocktail.jpg" alt="brunch">
+                <div class="item--text">
+                    <h5>Cocktails</h5>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="btn header__btn">
+            <a class="js--wp-1 animate__animated animate__pulse" href="#reserver">Commander en Ligne</a>
+        </div>
+
+
+        
+    </header>
+
+
+    <section class="section__carte js--section__carte" id="carte">
+        <div class="row carte__row">
+            <h2 class="carte__h2 section__header">La Carte</h2>
+            <div class="carte__container carte__container--1">
+                <button data-modal-target="#poisson" class="carte__menu carte__poisson">
+                    <div>
+                        <h4>Poisson Sauvage Pêché de la nuit</h4> 
+                    </div>
+                </button>
+                <button data-modal-target="#moules" class="carte__menu carte__moules">
+                    <div>
+                        <h4>Moules Frites à Volonté</h4> 
+                    </div>
+                </button>
+                <button data-modal-target="#fruitsmer" class="carte__menu carte__fruitsmer">
+                    <div>
+                        <h4>Fruits de Mer</h4> 
+                    </div>
+                </button>
+                <button data-modal-target="#terroir" class="carte__menu carte__terroir">
+                    <div>
+                        <h4>Terroir Normand</h4> 
+                    </div>
+                </button>
+            </div>
+
+            <div class="carte__container carte__container--2">
+                <button data-modal-target="#burger" class="carte__menu carte__burger">
+                    <div>
+                        <h4>Burger Frite</h4> 
+                    </div>
+                </button>
+                <button data-modal-target="#salade" class="carte__menu carte__salade">
+                    <div>
+                        <h4>Salade</h4> 
+                    </div>
+                </button>
+                <button data-modal-target="#grignotine" class="carte__menu carte__grignotine">
+                    <div>
+                        <h4>Grignotine</h4> 
+                    </div>
+                </button>
+                <button data-modal-target="#dessert" class="carte__menu carte__dessert">
+                    <div>
+                        <h4>Dessert</h4> 
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- FOOD MODALS -->
+
+        <!-- Poisson -->
+        <div class="modal" id="poisson">
+            <div class="modal__header">
+                <div class="modal__title">
+                    <h6>Poisson Sauvage Pêché de la nuit</h6>
+                </div>
+                <button data-close-button class="close__button">&times;</button>
+            </div>
+            <div class="modal__content">
+                <ul class="modal__list modal__list--1">
+                    <li>
+                        <p class="list--name">Carrelet</p>
+                        <p class="list--price">€15.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Bar</p>
+                        <p class="list--price">€25.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Savaray</p>
+                        <p class="list--price">€15.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Vive</p>
+                        <p class="list--price">€16.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Saint-Pierre</p>
+                        <p class="list--price">€20.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Turbot</p>
+                        <p class="list--price">€25.00</p>
+                    </li>
+                </ul>
+                <ul class="modal__list modal__list--2">
+                    <li>
+                        <p class="list--name">Rouget Grondin</p>
+                        <p class="list--price">€15.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Rouget Barbet</p>
+                        <p class="list--price">€15.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Limande</p>
+                        <p class="list--price">€16.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Sole</p>
+                        <p class="list--price">€15.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Barbue</p>
+                        <p class="list--price">€15.00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Moules -->
+        <div class="modal" id="moules">
+            <div class="modal__header">
+                <div class="modal__title">
+                    <h6>Moules Frites à Volonté</h6>
+                </div>
+                <button data-close-button class="close__button">&times;</button>
+            </div>
+            <div class="modal__content">
+                <ul class="modal__list modal__list--1">
+                    <li>
+                        <p class="list--name">Marinières</p>
+                        <p class="list--price">€16.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Bleu</p>
+                        <p class="list--price">€16.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Curry</p>
+                        <p class="list--price">€16.00</p>
+                    </li>
+                </ul>
+                <ul class="modal__list modal__list--2">
+                    <li>
+                        <p class="list--name">Crème</p>
+                        <p class="list--price">€16.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Camembert</p>
+                        <p class="list--price">€16.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Espelette</p>
+                        <p class="list--price">€16.00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Fruits de Mer -->
+        <div class="modal" id="fruitsmer">
+            <div class="modal__header">
+                <div class="modal__title">
+                    <h6>Fruits de Mer</h6>
+                </div>
+                <button data-close-button class="close__button">&times;</button>
+            </div>
+            <div class="modal__content">
+                <ul class="modal__list modal__list--1">
+                    <li>
+                        <p class="list--name">Assiette du Large</p>
+                        <p class="list--price">€20.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Assiette de Crevettes Roses</p>
+                        <p class="list--price">€10.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Tourteaux Mayonnaise</p>
+                        <p class="list--price">€16.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Plateau Royal</p>
+                        <p class="list--price">€80.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">9 Huîtres Fines Perle Saline, N°3</p>
+                        <p class="list--price">€18.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">8 Langoustines Mayonnaise</p>
+                        <p class="list--price">€20.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Assiette de Crevettes Grises</p>
+                        <p class="list--price">€11.00</p>
+                    </li>
+                </ul>
+                <ul class="modal__list modal__list--2">
+                    <li>
+                        <p class="list--name">Plateau de Crustacé</p>
+                        <p class="list--price">€40.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Bulots Mayonnaise</p>
+                        <p class="list--price">€10.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Plateau de Fruits de Mer</p>
+                        <p class="list--price">€40.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">6 Huîtres Fines Perle Saline, N°3</p>
+                        <p class="list--price">€12.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">12 Huîtres Fines Perle Saline, N°3</p>
+                        <p class="list--price">€24.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Homard Breton Mayonnaise</p>
+                        <p class="list--price">€45.00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Terroir Normand -->
+        <div class="modal" id="terroir">
+            <div class="modal__header">
+                <div class="modal__title">
+                    <h6>Terroir Normand</h6>
+                </div>
+                <button data-close-button class="close__button">&times;</button>
+            </div>
+            <div class="modal__content">
+                <ul class="modal__list modal__list--1">
+                    <li>
+                        <p class="list--name">Fondue Camembert</p>
+                        <p class="list--price">€16.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Fondue Livarot</p>
+                        <p class="list--price">€18.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Tournedos de Magret de Canard</p>
+                        <p class="list--price">€16.00</p>
+                    </li>
+                </ul>
+                <ul class="modal__list modal__list--2">
+                    <li>
+                        <p class="list--name">Fondue Pont l´Eveque</p>
+                        <p class="list--price">€18.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Fondue Pavé d'Auge</p>
+                        <p class="list--price">€18.00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Burger -->
+        <div class="modal" id="burger">
+            <div class="modal__header">
+                <div class="modal__title">
+                    <h6>Burger Frite</h6>
+                </div>
+                <button data-close-button class="close__button">&times;</button>
+            </div>
+            <div class="modal__content">
+                <ul class="modal__list modal__list--1">
+                    <li>
+                        <p class="list--name">Beef Bio</p>
+                        <p class="list--price">€16.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Saumon Can</p>
+                        <p class="list--price">€16.00</p>
+                    </li>
+                </ul>
+                <ul class="modal__list modal__list--2">
+                    <li>
+                        <p class="list--name">Chicken Can</p>
+                        <p class="list--price">€12.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Végétarian Can</p>
+                        <p class="list--price">€16.00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Salade -->
+        <div class="modal" id="salade">
+            <div class="modal__header">
+                <div class="modal__title">
+                    <h6>Salade</h6>
+                </div>
+                <button data-close-button class="close__button">&times;</button>
+            </div>
+            <div class="modal__content">
+                <ul class="modal__list modal__list--1">
+                    <li>
+                        <p class="list--name">Normande</p>
+                        <p class="list--price">€15.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Gourmet</p>
+                        <p class="list--price">€20.00</p>
+                    </li>
+                </ul>
+                <ul class="modal__list modal__list--2">
+                    <li>
+                        <p class="list--name">Chavrou</p>
+                        <p class="list--price">€14.00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Grignotine -->
+        <div class="modal" id="grignotine">
+            <div class="modal__header">
+                <div class="modal__title">
+                    <h6>Grignotine</h6>
+                </div>
+                <button data-close-button class="close__button">&times;</button>
+            </div>
+            <div class="modal__content">
+                <ul class="modal__list modal__list--1">
+                    <li>
+                        <p class="list--name">Charcuterie Artisanale Normande</p>
+                        <p class="list--price">€15.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Assiette de Fromage</p>
+                        <p class="list--price">€5.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Crevette Tempure</p>
+                        <p class="list--price">€12.00</p>
+                    </li>
+                </ul>
+                <ul class="modal__list modal__list--2">
+                    <li>
+                        <p class="list--name">Duo Accras de Morue et Beignets de Calamars</p>
+                        <p class="list--price">€10.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Mix Charcuterie Artisanale et Fromages</p>
+                        <p class="list--price">€15.00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Dessert -->
+        <div class="modal" id="dessert">
+            <div class="modal__header">
+                <div class="modal__title">
+                    <h6>Dessert</h6>
+                </div>
+                <button data-close-button class="close__button">&times;</button>
+            </div>
+            <div class="modal__content">
+                <ul class="modal__list modal__list--1">
+                    <li>
+                        <p class="list--name">Crepe sucre</p>
+                        <p class="list--price">€3.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Crepe Nutella</p>
+                        <p class="list--price">€3.80</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Profiteroles Maison</p>
+                        <p class="list--price">€9.50</p>
+                    </li>
+                </ul>
+                <ul class="modal__list modal__list--2">
+                    <li>
+                        <p class="list--name">Crepe crème de marron</p>
+                        <p class="list--price">€4.00</p>
+                    </li>
+                    <li>
+                        <p class="list--name">Café ou Thé Gourmand</p>
+                        <p class="list--price">€8.50</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION MAP -->
+    <section class="section__map" id="reserver">
+        <div class="row map__row">
+            <h2 class="carte__h2 section__header">Réservation / Localisation</h2>
+            <div class="map__container">
+                <div id="map">
+
+                </div>
+                <div class="map__container__reserve">
+                    <h2 class="reserve--title">Réserver</h2>
+                    <h3 class="reserve--number"><a href="tel:+33660035456">06 60 03 54 56</a></h3>
+                    <h3 class="reserve--address"><a href="https://www.google.com/maps/place/Hurricane+Bar/@49.3223578,-0.006749,17z/data=!3m1!4b1!4m5!3m4!1s0x480a7f78de2e7c0b:0xc80668ee25d07eeb!8m2!3d49.3223017!4d-0.0065675" target="_blank">22 Rue du Maréchal Foch, 14640 Villers-sur-Mer</a></h3>
+                    <p>ou</p>
+                    <button class="btn btn__commande"><a href="#">Faire une commande à emporter</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__boissons" id="boissons">
+        <div class="row boissons__row">
+            <h2 class="carte__h2 section__header">Les Boissons</h2>
+            <div class="carte__container boissons__container--1">
+                <button data-modal-target="#rouges" class="carte__menu carte__red">
+                    <div>
+                        <h4>Vins Rouges</h4> 
+                    </div>
+                </button>
+                <button data-modal-target="#roses" class="carte__menu carte__rose">
+                    <div>
+                        <h4>Vins Rosés</h4> 
+                    </div>
+                </button>
+                <button data-modal-target="#blancs" class="carte__menu carte__white">
+                    <div>
+                        <h4>Vins Blancs</h4> 
+                    </div>
+                </button>
+            </div>
+            <div class="carte__container boissons__container--1">
+                <button data-modal-target="#bieres" class="carte__menu carte__beer">
+                    <div>
+                        <h4>Bieres</h4> 
+                    </div>
+                </button>
+                <button data-modal-target="#cocktails" class="carte__menu carte__cocktails">
+                    <div>
+                        <h4>Cocktails</h4> 
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row footer__row">
+            <div class="footer__nav">
+                <ul>
+                    <li><a href="#reserver">Commander en Ligne</a></li>
+                    <li><a href="#carte">La Carte</a></li>
+                    <li><a href="#boissons">Les Boissons</a></li>
+                    <li><a href="#reserver">Contact</a></li>
+                </ul>
+                <p class="footer__copyright"> &copy; Copyright Hurricane Bar 2021</p>
+            </div>
+        </div>
+        
+        
+    </footer>
+
+    <div id="modal__overlay"></div>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWRxuWAKOqWLJnEEULHbtHXKvFqD8aGMI&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script src="resources/js/script.js"></script>
+</body>
+</html>

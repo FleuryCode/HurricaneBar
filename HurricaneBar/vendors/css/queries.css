@@ -1,0 +1,222 @@
+
+
+/* Tablets Portrait. From 1024-1200px */
+@media only screen and (max-width: 1200px) {
+
+    nav {
+        width: 100%;
+    }
+
+    nav h1{
+        font-size: 70%;
+    }
+
+    .header__nav li{
+        margin: 0 1%;
+        font-size: 80%;
+    }
+
+    nav div ul li {
+        font-size: 70%;
+        text-align: center;
+    }
+
+
+    .slideshow {
+        font-size: 60%;
+    }
+
+    .carte__container {
+        font-size: 70%;
+    }
+
+    footer {
+        font-size: 80%;
+    }
+
+    .footer__copyright {
+        font-size: 60%;
+    }
+
+
+}
+
+/* Tablets Portrait. From 768-1023px */
+@media only screen and (max-width: 1023px) {
+    .header__row ul {
+        display: none;
+    }
+
+    .header__row .mobile__nav__icon {
+        display: inline-block;
+    }
+
+    #main__nav .header__row .mobile__nav--list{
+        display: flex;
+    }
+
+    .header__row .header__mobile__title {
+        display: block;
+    }
+
+    .modal .modal__title {
+        font-size: 120%;
+    }
+
+    .modal {
+        min-width: 90%;
+    }
+
+    .modal .modal__content {
+        padding: 1% 3%;
+        font-size: 50%;
+        letter-spacing: 2px;
+    }
+
+
+
+}
+
+/* Small Phones to small tablets From 481-767px */
+@media only screen and (max-width: 767px) {
+
+    .header__row .mobile__nav__icon {
+        margin-top: -7.5%;
+        font-size: 60%;
+    }
+
+    #main__nav .header__row .mobile__nav--list li a{
+        font-size: 80%;
+    }
+    .section__carte .carte__row h2 {
+        font-size: 80%;
+        margin-top: 1%;
+        padding: 0;
+    }
+
+    .section__map .map__row h2 {
+        width: 80%;
+        font-size: 70%;
+        margin-top: 1%;
+        padding: 0;
+    }
+
+    .section__boissons .boissons__row h2 {
+        font-size: 80%;
+        margin-top: 1%;
+        padding: 0;
+    }
+
+    .slideshow {
+        font-size: 45%;
+    }
+
+    header .header__btn a:link,
+    header .header__btn a:visited {
+        margin-top: 3%;
+        top: 53%;
+        padding: 7px 30px 7px 30px;
+        font-size: 90%;
+    }
+
+    .section__carte .carte__row .carte__container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 3% 3% 0 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+    }
+
+    .section__carte .carte__row .carte__container button {
+        width: 100%;
+        margin-top: 25px;
+    }
+    
+    .section__carte .carte__row .carte__container--2:first-child {
+        margin-top: 0;
+    }
+
+    .modal .modal__title {
+        font-size: 100%;
+    }
+
+    .modal {
+        width: 90%;
+        height: auto;
+    }
+
+    .map__row .map__container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        
+    }
+
+    .map__container #map {
+        width: 90%;
+        height: 300px;
+        margin: 0 auto;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+
+    .map__container .map__container__reserve {
+        margin: 0 auto;
+    }
+
+    .map__container .map__container__reserve button {
+        font-size: 70%;
+    }
+
+    .section__boissons .boissons__row .carte__container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 3% 3% 0 3%;
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+    }
+
+    .section__boissons .boissons__row .carte__container button {
+        width: 100%;
+        margin-top: 25px;
+    }
+    
+    .section__boissons .boissons__row .boissons__container--2:first-child {
+        margin-top: 0;
+    }
+
+    footer {
+        font-size: 70%;
+    }
+
+
+
+
+}
+
+/* Small Phones. From 0-480px */
+@media only screen and (max-width: 480px) {
+    .slideshow {
+        font-size: 30%;
+    }
+
+    .header__row .mobile__nav__icon {
+        margin-right: -30px;
+        margin-top: -40px;
+    }
+
+    .sticky{
+        padding: 0 10%; 
+    }
+
+    footer {
+        font-size: 50%;
+    }
+
+
+
+}
